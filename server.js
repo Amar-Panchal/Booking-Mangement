@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 mongoose
   .connect(`${process.env.CONNECTION_STRING}`, {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
+    // useUnifiedTopology: true,
     serverSelectionTimeoutMS: 40000,
   })
   .then(() => console.log('Connected to MongoDB'))
