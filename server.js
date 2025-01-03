@@ -47,7 +47,7 @@ const ItemSchema = new mongoose.Schema({
   status: String,
 });
 
-const Item = mongoose.model('BookingManagementCluster', ItemSchema);
+const Item = mongoose.model('BookingManagementCollection', ItemSchema);
 
 app.get('/', async (req, res) => {
   try {
